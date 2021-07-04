@@ -1,4 +1,4 @@
-import { proxy } from 'valtio/vanilla';
+import { proxy } from 'valtio';
 import { watch } from 'valtio/utils';
 import { setRenderer, define } from 'valtio-element';
 import { render, html } from 'lit-html';
@@ -31,11 +31,11 @@ define({
     });
 
     function updateGreeting(event: Event) {
-      greeting.value = event.target.value;
+      greeting.value = (event.target as HTMLInputElement).value;
     }
 
     function updatePerson(event: Event) {
-      person.value = event.target.value;
+      person.value = (event.target as HTMLInputElement).value;
     }
 
     return (get) => (
