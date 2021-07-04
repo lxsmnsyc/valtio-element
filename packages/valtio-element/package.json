@@ -16,7 +16,9 @@
   },
   "license": "MIT",
   "keywords": [
-    "pridepack"
+    "pridepack",
+    "valtio",
+    "custom-element"
   ],
   "name": "valtio-element",
   "devDependencies": {
@@ -42,5 +44,19 @@
     "watch": "pridepack watch"
   },
   "dependencies": {
-  }
+  },
+  "description": "Create reactive, declarative custom elements with valtio",
+  "repository": {
+    "url": "https://github.com/lxsmnsyc/valtio-element.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/lxsmnsyc/valtio-element/tree/main/packages/valtio-element",
+  "bugs": {
+    "url": "https://github.com/lxsmnsyc/valtio-element/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Alexis Munsayac",
+  "private": false
 }
