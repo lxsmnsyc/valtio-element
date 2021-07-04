@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.1.0",
   "name": "valtio-element-vite",
   "license": "MIT",
   "scripts": {
@@ -10,7 +10,7 @@
   "dependencies": {
     "lit-html": "^1.4.1",
     "valtio": "^1.0.6",
-    "valtio-element": "^0.0.0"
+    "valtio-element": "0.1.0"
   },
   "devDependencies": {
     "eslint": "^7.30.0",
