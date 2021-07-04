@@ -1,0 +1,21 @@
+{
+  "version": "0.0.0",
+  "name": "valtio-element-vite",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "lit-html": "^1.4.1",
+    "valtio": "^1.0.6",
+    "valtio-element": "^0.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-lxsmnsyc": "^0.2.3",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.8"
+  }
+}
