@@ -92,6 +92,21 @@ define({
 
 `render` receives a `get` callback which is used to track proxy updates and prompts the element to re-render its content.
 
+### Props
+
+`valtio-element` uses the element's `props` definition for tracking element attributes. You can then access these props with `setup`. The `props` object received is wrapped with `valtio/vanilla`'s `proxy` therefore they are reactive.
+
+```ts
+define({
+  props: ['name'],
+  setup(props) {
+    watch((get) => {
+      console.log('Name:', get(props).name);
+    });
+  },
+});
+```
+
 ### Element State
 
 `valtio-element` can use `valtio/vanilla`'s `proxy` to construct element states.
