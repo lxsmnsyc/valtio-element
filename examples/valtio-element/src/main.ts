@@ -8,39 +8,41 @@ setRenderer((root, result) => {
 });
 
 define({
-  name: 'counter-title',
-  props: ['value'],
+  name: 'greeting-text',
+  props: ['greeting', 'person'],
   setup(props) {
-    watch((get) => {
-      console.log(`Current count: ${get(props).value}`);
-    });
-
     return (get) => (
-      html`
-        <h1>Count: ${get(props).value}</h1>
-      `
+      html`<h1>${get(props).greeting}, ${get(props).person}</h1>`
     );
   },
 });
 
 define({
-  name: 'counter-button',
+  name: 'greeting-form',
   setup() {
-    const count = proxy({ value: 1 });
+    const greeting = proxy({ value: 'Hello' });
+    const person = proxy({ value: 'Valtio' });
 
-    function increment() {
-      count.value += 1;
+    watch((get) => {
+      console.log('Greeting', get(greeting).value);
+    });
+    watch((get) => {
+      console.log('Person', get(person).value);
+    });
+
+    function updateGreeting(event: Event) {
+      greeting.value = event.target.value;
     }
 
-    function decrement() {
-      count.value -= 1;
+    function updatePerson(event: Event) {
+      person.value = event.target.value;
     }
 
     return (get) => (
       html`
-        <button @click=${increment}>Increment</button>
-        <button @click=${decrement}>Decrement</button>
-        <counter-title value="${get(count).value}"></counter-title>
+        <input type="text" value=${get(greeting).value} @input=${updateGreeting} />
+        <input type="text" value=${get(person).value} @input=${updatePerson} />
+        <greeting-text greeting=${get(greeting).value} person=${get(person).value}></greeting-text>
       `
     );
   },
@@ -51,7 +53,7 @@ define({
   setup() {
     return () => (
       html`
-        <counter-button></counter-button>
+        <greeting-form></greeting-form>
       `
     );
   },
