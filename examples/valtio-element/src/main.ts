@@ -25,7 +25,6 @@ define({
 
 define({
   name: 'counter-button',
-  props: ['value'],
   setup() {
     const count = proxy({ value: 1 });
 

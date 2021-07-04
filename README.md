@@ -1,12 +1,12 @@
-# blurhash-as
+# valtio-element
 
-> Blurhash implementation in AssemblyScript
+> Create declarative, reactive custom elements with valtio
 
 ## Packages
 
 | Package | Version | Example | Notes |
 | --- | --- | --- | --- |
-| [`blurhash-as`](https://github.com/lxsmnsyc/laze/tree/main/packages/blurhash-as) | [![NPM](https://img.shields.io/npm/v/blurhash-as.svg)](https://www.npmjs.com/package/blurhash-as) | [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://codesandbox.io/s/github/lxsmnsyc/blurhash-as/tree/main/examples/blurhash-as) | demo |
+| [`valtio-element`](https://github.com/lxsmnsyc/laze/tree/main/packages/valtio-element) | [![NPM](https://img.shields.io/npm/v/valtio-element.svg)](https://www.npmjs.com/package/valtio-element) | [![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat-square&logo=codesandbox)](https://codesandbox.io/s/github/lxsmnsyc/valtio-element/tree/main/examples/valtio-element) | demo |
 
 ## License
 
