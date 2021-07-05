@@ -1,4 +1,4 @@
-import { proxy } from 'valtio';
+import { proxy } from 'valtio/vanilla';
 import { watch } from 'valtio/utils';
 import { setRenderer, define } from 'valtio-element';
 import { render, html } from 'lit-html';
